@@ -1,24 +1,25 @@
 import Contato from '../../../components/Contato'
 import { Container } from './styles'
+import * as enums from '../../../utils/enums/Contato'
 
 const contatos = [
   {
     nome: 'João Carlos Borges',
     email: 'joaocarlosifsc@hotmail.com',
     telefone: 48991268854,
-    status: 'família'
+    status: enums.Status.FAMILIA
   },
   {
     nome: 'Maria de Souza',
     email: 'marias@hotmail.com',
     telefone: 48991268854,
-    status: 'amigo'
+    status: enums.Status.AMIGOS
   },
   {
     nome: 'Pedro José',
     email: 'josepedro@hotmail.com',
     telefone: 48991268854,
-    status: 'trabalho'
+    status: enums.Status.TRABALHO
   }
 ]
 
