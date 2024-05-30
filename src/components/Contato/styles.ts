@@ -17,6 +17,7 @@ export const Nome = styled.h3`
 export const Email = styled.h4`
   font-size: 14px;
   font-weight: bold;
+  padding: 8px 0;
 `
 
 export const Telefone = styled.h4`
