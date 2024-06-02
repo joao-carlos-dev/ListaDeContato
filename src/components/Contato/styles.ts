@@ -24,22 +24,28 @@ export const Card = styled.div`
   border-radius: 16px;
 `
 
-export const Nome = styled.h3`
+export const Nome = styled.input`
   font-size: 18px;
   font-weight: bold;
   margin-top: 16px;
+  display: block;
+  border: none;
 `
 
-export const Email = styled.h4`
+export const Email = styled.input`
   font-size: 14px;
   font-weight: bold;
   padding: 8px 0;
+  display: block;
+  border: none;
 `
 
-export const Telefone = styled.h4`
+export const Telefone = styled.input`
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 16px;
+  display: block;
+  border: none;
 `
 
 export const Tag = styled.span<TagProps>`

@@ -4,14 +4,14 @@ class Contato {
   nome: string
   status: enums.Status
   email: string
-  telefone: number
+  telefone: string
   id: number
 
   constructor(
     nome: string,
     status: enums.Status,
     email: string,
-    telefone: number,
+    telefone: string,
     id: number
   ) {
     this.nome = nome

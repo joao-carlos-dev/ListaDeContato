@@ -13,21 +13,21 @@ const initialState: ContatosState = {
       nome: 'João Carlos Borges',
       status: enums.Status.FAMILIA,
       email: 'joaocarlosifsc@hotmail.com',
-      telefone: 48991268854
+      telefone: '48991268854'
     },
     {
       id: 2,
       nome: 'Maria da Silva',
       status: enums.Status.AMIGOS,
       email: 'silvaaria@hotmail.com',
-      telefone: 48991268866
+      telefone: '98991268866'
     },
     {
       id: 3,
       nome: 'José Pedro',
       status: enums.Status.TRABALHO,
       email: 'pedrinho@hotmail.com',
-      telefone: 48998868854
+      telefone: '48998868854'
     }
   ]
 }
@@ -40,10 +40,19 @@ const contatosSlice = createSlice({
       state.itens = state.itens.filter(
         (contato) => contato.id !== action.payload
       )
+    },
+    editar: (state, action: PayloadAction<Contato>) => {
+      const indexDoContato = state.itens.findIndex(
+        (c) => c.id === action.payload.id
+      )
+
+      if (indexDoContato >= 0) {
+        state.itens[indexDoContato] = action.payload
+      }
     }
   }
 })
 
-export const { remover } = contatosSlice.actions
+export const { remover, editar } = contatosSlice.actions
 
 export default contatosSlice.reducer
