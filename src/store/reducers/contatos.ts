@@ -24,7 +24,7 @@ const initialState: ContatosState = {
     },
     {
       id: 3,
-      nome: 'José Pedro',
+      nome: 'João Pedro',
       status: enums.Status.TRABALHO,
       email: 'pedrinho@hotmail.com',
       telefone: '48998868854'

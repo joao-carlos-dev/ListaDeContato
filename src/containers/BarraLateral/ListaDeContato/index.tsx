@@ -6,12 +6,27 @@ import { RootReducer } from '../../../store'
 
 const ListaDeContato = () => {
   const { itens } = useSelector((state: RootReducer) => state.contatos)
-  const { termo } = useSelector((state: RootReducer) => state.filtro)
+  const { termo, criterio, valor } = useSelector(
+    (state: RootReducer) => state.filtro
+  )
 
   const filtraContatos = () => {
-    return itens.filter(
-      (item) => item.nome.toLocaleLowerCase().search(termo.toLowerCase()) >= 0
-    )
+    let contatosFiltrados = itens
+    if (termo !== undefined) {
+      contatosFiltrados = contatosFiltrados.filter(
+        (item) => item.nome.toLocaleLowerCase().search(termo.toLowerCase()) >= 0
+      )
+
+      if (criterio == 'status') {
+        contatosFiltrados = contatosFiltrados.filter(
+          (item) => item.status === valor
+        )
+      }
+
+      return contatosFiltrados
+    } else {
+      return itens
+    }
   }
 
   return (
