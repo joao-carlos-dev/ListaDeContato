@@ -31,7 +31,7 @@ const ListaDeContato = () => {
   const exibeResultadoFiltrage = (quantidade: number) => {
     let mensagem = ''
     const complementacao =
-      termo !== undefined && termo.length > 0 ? `e S{termo}` : ''
+      termo !== undefined && termo.length > 0 ? `e ${termo}` : ''
 
     if (criterio === 'todas') {
       mensagem = `${quantidade} contato(s) encontrado(s) como: todas ${complementacao}`
