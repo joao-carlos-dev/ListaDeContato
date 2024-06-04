@@ -25,6 +25,10 @@ export const Opcao = styled.div`
   display: inline;
   text-transform: capitalize;
 
+  input {
+    margin-right: 8px;
+  }
+
   label {
     margin-right: 8px;
   }

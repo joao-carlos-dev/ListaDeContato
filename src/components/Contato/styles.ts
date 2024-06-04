@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
 import * as enums from '../../utils/enums/Contato'
+import { Botao } from '../../styles'
 
 type TagProps = {
   status?: enums.Status
@@ -17,35 +18,21 @@ function retornaCorDeFundo(props: TagProps): string {
 }
 
 export const Card = styled.div`
-  backround-color: #fcfcfc;
+  background-color: #e0ffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
 `
 
-export const Nome = styled.input`
+export const informacao = styled.input`
   font-size: 18px;
   font-weight: bold;
   margin-top: 16px;
+  margin-bottom: 8px;
   display: block;
   border: none;
-`
-
-export const Email = styled.input`
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px 0;
-  display: block;
-  border: none;
-`
-
-export const Telefone = styled.input`
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 16px;
-  display: block;
-  border: none;
+  background-color: transparent;
 `
 
 export const Tag = styled.span<TagProps>`
@@ -58,20 +45,8 @@ export const Tag = styled.span<TagProps>`
 `
 
 export const BarraAcoes = styled.div`
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 255, 0, 0.3);
   padding-top: 16px;
-`
-
-export const Botao = styled.button`
-  font-weight: bold;
-  font-size: 12px;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  cursor: pointer;
-  background-color: #2f3640;
-  border-radius: 8px;
-  margin-right: 8px;
 `
 
 export const BotaoCancelarRemover = styled(Botao)`

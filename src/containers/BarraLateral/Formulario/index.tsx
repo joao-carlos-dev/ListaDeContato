@@ -6,7 +6,6 @@ import { BotaoSalvar, MainContainer, Titulo } from '../../../styles'
 import { Campo } from '../../../styles'
 import { Form, Opcoes, Opcao } from './style'
 import * as enums from '../../../utils/enums/Contato'
-import Contato from '../../../models/Contato'
 import { cadastrar } from '../../../store/reducers/contatos'
 
 const Formulario = () => {
@@ -20,9 +19,15 @@ const Formulario = () => {
 
   const cadastrarContato = (evento: FormEvent) => {
     evento.preventDefault()
-    const contatoParaAdicionar = new Contato(nome, status, email, telefone, 9)
 
-    dispatch(cadastrar(contatoParaAdicionar))
+    dispatch(
+      cadastrar({
+        nome,
+        email,
+        telefone,
+        status
+      })
+    )
     navigate('/')
   }
 

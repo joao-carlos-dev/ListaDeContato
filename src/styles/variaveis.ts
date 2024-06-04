@@ -4,5 +4,6 @@ export default {
   amarelo: '#f0c11a',
   azul: '#2980b9',
   laranja: '#f39c12',
-  vermelho2: '#c0392b'
+  vermelho2: '#c0392b',
+  azulEscuro: '#2f3640'
 }
