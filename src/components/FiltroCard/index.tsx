@@ -12,7 +12,8 @@ export type Props = {
 }
 const FiltroCard = ({ legenda, criterio, valor }: Props) => {
   const dispach = useDispatch()
-  const { filtro, contatos } = useSelector((state: RootReducer) => state)
+  const filtro = useSelector((state: RootReducer) => state.filtro)
+  const contatos = useSelector((state: RootReducer) => state.contatos)
 
   const verificaEstaAtivo = () => {
     const mesmoCriterio = filtro.criterio === criterio
@@ -26,6 +27,7 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
     if (criterio === 'status') {
       return contatos.itens.filter((item) => item.status === valor).length
     }
+    return 0
   }
 
   const filtrar = () => {
@@ -41,7 +43,7 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
   const contador = contarContato()
 
   return (
-    <S.Card ativo={ativo} onClick={filtrar}>
+    <S.Card $ativo={ativo} $status={valor} onClick={filtrar}>
       <S.Contador>{contador}</S.Contador>
       <S.Label>{legenda}</S.Label>
     </S.Card>
