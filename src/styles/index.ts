@@ -15,7 +15,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 224px auto;
 
-  @media screen and (min-width: 360px) and (max-width: 820px) {
+  @media screen and (min-width: 280px) and (max-width: 820px) {
     grid-template-columns: 148px auto;
     overflow-x: scroll;
   }
@@ -25,7 +25,7 @@ export const MainContainer = styled.main`
   height: 100vh;
   overflow-y: scroll;
 
-  @media screen and (min-width: 360px) and (max-width: 820px) {
+  @media screen and (min-width: 280px) and (max-width: 820px) {
     padding: 0 18px;
   }
 `

@@ -13,7 +13,7 @@ export const Card = styled.div<Props>`
   border-radius: 8px;
   cursor: pointer;
 
-  @media screen and (min-width: 360px) and (max-width: 820px) {
+  @media screen and (min-width: 280px) and (max-width: 820px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ export const Contador = styled.span`
 export const Label = styled.span`
   font-size: 14px;
 
-  @media screen and (min-width: 360px) and (max-width: 820px) {
+  @media screen and (min-width: 280px) and (max-width: 820px) {
     padding: 8px;
   }
 `

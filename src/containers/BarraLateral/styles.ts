@@ -5,7 +5,7 @@ export const Aside = styled.aside`
   background-color: #e0ffff;
   height: 100vh;
 
-  @media screen and (min-width: 360px) and (max-width: 820px) {
+  @media screen and (min-width: 280px) and (max-width: 820px) {
     width: 150px;
     padding: 8px;
   }
@@ -17,7 +17,7 @@ export const Filtros = styled.div`
   grid-gap: 8px;
   margin-top: 16px;
 
-  @media screen and (min-width: 360px) and (max-width: 820px) {
+  @media screen and (min-width: 280px) and (max-width: 820px) {
     display: block;
   }
 `

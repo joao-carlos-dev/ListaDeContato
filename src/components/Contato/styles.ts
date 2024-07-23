@@ -33,6 +33,10 @@ export const informacao = styled.input`
   display: block;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 280px) and (max-width: 820px) {
+    font-size: 12px;
+  }
 `
 
 export const Tag = styled.span<TagProps>`
