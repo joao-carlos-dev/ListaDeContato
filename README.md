@@ -3,8 +3,7 @@
 ## 🚀 Começando
 
 Pojeto utilizando React, Styled Components e Redux. O React foi a biblioteca escolhida para criar interface, o Styled Components responsável por estilizar aplicação e o Redux para gerenciar o estado da aplicação do projeto. 
-
-O projeto tinha como foco criar uma lista de contatos, aonde podemos, consultar os contatos, por filtros, adicionar novos contatos, editar e remover contatos. 
+O projeto tem como foco criar uma lista de contatos, aonde podemos, consultar os contatos, por filtros, adicionar novos contatos, editar e remover contatos. 
 
 ### 🛠️ Construído com
 
