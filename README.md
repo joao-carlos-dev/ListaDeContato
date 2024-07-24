@@ -13,4 +13,4 @@ O projeto tinha como foco criar uma lista de contatos, aonde podemos, consultar 
 ![styledcomponents](https://img.shields.io/badge/styledcomponents-F7DF1E?style=for-the-badge&logo=styledcomponents&logoColor=black)&nbsp;
 
 ### Visitar
-<a href="https://lista-contato-virid.vercel.app/"> <buttom target="_blank">clique aqui para visitar o projeto</buttom> </a>
+<a href="https://lista-contato-virid.vercel.app/" target="_blank"> <buttom>clique aqui para visitar o projeto</buttom> </a>
