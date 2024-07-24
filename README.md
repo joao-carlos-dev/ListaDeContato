@@ -12,5 +12,9 @@ O projeto tinha como foco criar uma lista de contatos, aonde podemos, consultar 
 ![redux](https://img.shields.io/badge/redux-F7DF1E?style=for-the-badge&logo=redux&logoColor=black)&nbsp;
 ![styledcomponents](https://img.shields.io/badge/styledcomponents-F7DF1E?style=for-the-badge&logo=styledcomponents&logoColor=black)&nbsp;
 
-### Visitar
+### 🖱️ Visitar
 <a href="https://lista-contato-virid.vercel.app/"> <buttom>clique aqui para visitar o projeto</buttom> </a>
+
+### 🖋️ Mais informações
+
+Projeto construindo no curso Full Stacy Pyhton, da Eescola Britânica de Artes criativas & Tecnologia (EBAC)
