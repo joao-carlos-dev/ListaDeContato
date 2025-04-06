@@ -1,19 +1,36 @@
-# Lista de Contatos
+# Minhas Tarefas - Agenda de Contatos
 
-## 🚀 Começando
+## Introdução
 
-Pojeto utilizando React, Styled Components e Redux. O React foi a biblioteca escolhida para criar interface, o Styled Components responsável por estilizar aplicação e o Redux para gerenciar o estado da aplicação do projeto. 
-O projeto tem como foco criar uma lista de contatos, aonde podemos, consultar os contatos, por filtros, adicionar novos contatos, editar e remover contatos. 
+Este projeto consiste em uma aplicação web de agenda de contatos, desenvolvida utilizando React e TypeScript. A aplicação permite aos usuários cadastrar, editar, remover e filtrar contatos por diferentes categorias (Família, Trabalho, Amigos e Todos). A interface é construída com Styled Components para estilização e utiliza o Redux Toolkit para gerenciamento de estado, facilitando a manipulação e persistência dos dados dos contatos e dos filtros aplicados. A navegação entre as páginas de listagem e cadastro de contatos é realizada com React Router DOM.
 
-### 🛠️ Construído com
+## Tecnologias Utilizadas
 
-![react](https://img.shields.io/badge/react-F7DF1E?style=for-the-badge&logo=react&logoColor=black)&nbsp;
-![redux](https://img.shields.io/badge/redux-F7DF1E?style=for-the-badge&logo=redux&logoColor=black)&nbsp;
-![styledcomponents](https://img.shields.io/badge/styledcomponents-F7DF1E?style=for-the-badge&logo=styledcomponents&logoColor=black)&nbsp;
+* **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+* **TypeScript:** Superset de JavaScript que adiciona tipagem estática ao código.
+* **Redux Toolkit:** Biblioteca para gerenciamento de estado global da aplicação.
+* **React Redux:** Biblioteca para conectar componentes React ao store Redux.
+* **React Router DOM:** Biblioteca para roteamento e navegação entre diferentes views da aplicação.
+* **Styled Components:** Biblioteca para escrever estilos CSS diretamente nos componentes React utilizando template literals.
+* **ESLint e Prettier:** Ferramentas para garantir a qualidade e consistência do código.
 
-### 🖱️ Visitar
-<a href="https://lista-contato-virid.vercel.app/"> <buttom>clique aqui para visitar o projeto</buttom> </a>
+## Funcionalidades
 
-### 🖋️ Mais informações
+* **Listagem de Contatos:** Exibe uma lista de contatos cadastrados, com opções para editar e remover cada contato.
+* **Cadastro de Novos Contatos:** Permite adicionar novos contatos à agenda, incluindo nome, e-mail, telefone e categoria (status).
+* **Edição de Contatos:** Possibilita modificar os detalhes de um contato existente.
+* **Filtragem de Contatos:** Permite filtrar a lista de contatos por categoria (Família, Trabalho, Amigos).
+* **Busca de Contatos:** Permite buscar contatos pelo nome.
+* **Interface Responsiva:** A interface da aplicação é projetada para se adaptar a diferentes tamanhos de tela.
+* **Gerenciamento de Estado:** Utiliza Redux Toolkit para gerenciar o estado global dos contatos e dos filtros.
+* **Navegação:** Utiliza React Router DOM para navegar entre a página principal (lista de contatos) e a página de cadastro.
 
-Projeto construindo no curso Full Stacy Pyhton, da Eescola Britânica de Artes criativas & Tecnologia (EBAC)
+## Contribuição
+
+Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
+
+1.  Faça um fork do repositório.
+2.  Crie uma branch com a sua funcionalidade ou correção de bug: `git checkout -b minha-funcionalidade`.
+3.  Faça as alterações e commit: `git commit -am 'Adiciona minha funcionalidade'`.
+4.  Envie as alterações para o seu fork: `git push origin minha-funcionalidade`.
+5.  Crie um pull request no GitHub.
